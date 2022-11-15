@@ -1,0 +1,26 @@
+{
+  "human": [
+    {
+      "name": "John",
+      "age": 12,
+      "isMale": true,
+      "address": {
+        "address1": "somewhere",
+        "address2": "somewhere",
+        "address3": "somewhere"
+      },
+      "animals": [
+        {
+          "name": "bobby",
+          "age": 5,
+          "type": "dog"
+        },
+        {
+          "name": "jenny",
+          "age": 5,
+          "type": "cat"
+        }
+      ]
+    }
+  ]
+}

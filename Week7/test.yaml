@@ -1,0 +1,18 @@
+server : 123
+# no comma is allowed 
+
+cryptoData:
+  targetUrl: "www.xxx.com/price"
+  timeout: 2000
+  method: "GET"
+
+customer:
+  name: "John"
+  age: 12
+  boolean: true
+  nullable : null
+  address:
+     addressline1: "some"
+     addressline2: "some"
+     addressline3: "some"
+    
