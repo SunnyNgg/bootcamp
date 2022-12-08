@@ -36,11 +36,6 @@ public class IllegalStateExceptions {
       printAddition(1, 1);
     }
 
-    try{
-      int c = divide(10, 0 );
-    } catch (Exception e){
-      System.out.println("I do nothing");
-    }
 
 }
 }

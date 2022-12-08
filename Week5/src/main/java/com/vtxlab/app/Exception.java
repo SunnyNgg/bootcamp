@@ -9,7 +9,6 @@ class IaeDemo {
     }
     else
     {
-      throw new IllegalAccessException("Not Eligible for Voting");
       
     }
   }

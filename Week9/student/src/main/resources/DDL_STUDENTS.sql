@@ -1,0 +1,14 @@
+drop table STUDENTS;
+
+Create Table STUDENTS(
+ID Integer not null AUTO_INCREMENT, 
+Height NUMERIC (5,2) NOT NULL,
+Name VARCHAR(100) NOT NULL,
+CONSTRAINT PK_STUDENTS PRIMARY KEY(ID)
+);
+
+
+
+
+
+

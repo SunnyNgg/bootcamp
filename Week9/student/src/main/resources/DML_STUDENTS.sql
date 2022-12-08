@@ -1,0 +1,6 @@
+
+INSERT INTO STUDENTS ( Name, Height)VALUES ('Owie', 170);
+INSERT INTO STUDENTS ( Name, Height)VALUES('Sam', 165);
+INSERT INTO STUDENTS ( Name, Height)VALUES('Anne', 141);
+
+COMMIT;

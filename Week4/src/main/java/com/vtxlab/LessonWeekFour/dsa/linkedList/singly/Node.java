@@ -1,4 +1,4 @@
-package com.vtxlab.LessonWeekFour.linkedList.singly;
+package com.vtxlab.LessonWeekFour.dsa.linkedList.singly;
 
 
 public class Node {

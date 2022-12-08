@@ -12,6 +12,5 @@ public class Lambda {
 
   }
 
-  List<String> hellowNamesList = nameList.stream
   
 }
