@@ -1,0 +1,17 @@
+server:
+  port: 8087
+
+spring.datasource:
+    url: jdbc:mysql://localhost:3306/sys
+    username: root
+    password: Prun1234.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+      password: 
+      timeout: 60000
