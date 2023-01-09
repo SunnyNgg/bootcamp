@@ -9,17 +9,19 @@ public interface ChannelService {
 
   Channel getChannel(String sourceType, String tranType );
 
+  Channel getChannel(String channelCode);
+
   List <Channel> getAllChannel();
 
   Channel updateChannel (Channel channel, Long channelId);
   
   Channel saveChannel (Channel channel, UUID uuid);
 
-  //Boolean isChannelCodeEmpty(String channelCode);
+  Boolean isChannelCodeEmpty(String channelCode);
 
-  public Channel submitChannel (Channel channel, UUID uuid) throws IllegalArgumentException;
+  Boolean isChannelCodeExist(String channelCode);
 
-
+   Channel submitChannel (Channel channel, UUID uuid) throws IllegalArgumentException;
 
   void deleteAllChannel();
 }

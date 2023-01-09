@@ -29,6 +29,11 @@ public class ChannelServiceHolder implements ChannelService {
   }
 
   @Override
+  public Channel getChannel(String channelCode){
+    return channelRepository.findByChannelCode(channelCode);
+  }
+
+  @Override
   public Channel updateChannel (Channel channel, Long channelId){
     return channelRepository.findById(channelId).map(chl ->{
       chl.setChannelCode(channel.getChannelCode());
@@ -59,23 +64,6 @@ public class ChannelServiceHolder implements ChannelService {
     return savedChannel;
   }
 
-  /* 
-  //@Override
-  private Boolean isChannelCodeEmpty(String channelCode){
-    return channelRepository.findByChannelCode(channelCode).isEmpty();  //<< jpa GG 
-
-  }
-
-  @Override
-  public Channel submitChannel (Channel channel, UUID uuid) throws IllegalArgumentException{
-
-   if (Boolean.valueOf(true).equals(isChannelCodeEmpty(channel.getChannelCode()))){ //<<<
-    return saveChannel(channel, uuid);
-   }
-   throw new IllegalArgumentException(); 
-  }
-*/
-
 
 
   private Boolean isChannelCodeEmpty2(String channelCode){
@@ -101,5 +89,17 @@ public class ChannelServiceHolder implements ChannelService {
   @Override 
   public void deleteAllChannel(){
     channelRepository.deleteAll();
+  }
+
+  @Override
+  public Boolean isChannelCodeExist(String channelCode) {
+    // TODO Auto-generated method stub
+    return channelRepository.existsByChannelCode(channelCode);
+  }
+
+  @Override
+  public Boolean isChannelCodeEmpty(String channelCode) {
+    // TODO Auto-generated method stub
+    return  channelRepository.existsByChannelCode(channelCode);
   }
 }

@@ -14,13 +14,14 @@ public enum ResponseStatus {
   THIRD_PARTY_API_FAIL(30001, "Thrid Party Api Fail."),
   THIRD_PARTY_API_TIMEOUT(30002, "Thrid Party Api Timeout."),
   // 30001...
-  NPE(70000, "Nullpointer Excepetion.")
+  NPE(70000, "Nullpointer Excepetion."),
+  AME(70001, "Arithmetic Exception.")
   ;
 
   Integer code;
   String message;
 
-  ResponseStatus(int code, String message){
+  ResponseStatus(Integer code, String message){
     this.message = message; 
     this.code = code; 
   }

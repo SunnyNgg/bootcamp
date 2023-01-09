@@ -52,7 +52,6 @@ public class ChannelController implements ChannelOperation{
 
   @Override
   public Channel submitChannel ( Channel channel, UUID uuid){
-    System.out.println("second I wanna know: "+ uuid);
     return channelService.submitChannel(channel, uuid);
   }
 

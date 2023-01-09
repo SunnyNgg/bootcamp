@@ -1,7 +1,5 @@
 package com.vtxlab.demo.openweather.config;
 
-
-
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager;
@@ -12,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
-/* 
+
 @Configuration
 public class RestTemplateConfig {
   // max no. of connections
@@ -57,7 +55,7 @@ public class RestTemplateConfig {
         .evictIdleConnections(TimeValue.ofSeconds(evictIdleConnection)).build();
 
     HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory();
-   // httpRequestFactory.setHttpClient(httpClient);
+    //httpRequestFactory.setHttpClient(httpClient);
     // 从连接池获取连接的超时时间，如果连接池里连接都被用了，且超过设定时间,就会报错connectionrequesttimeout
     httpRequestFactory.setConnectionRequestTimeout(poolConnectTimeout);
     // 如果与服务器(这里指数据库)请求建立连接的时间超过ConnectionTimeOut，就会抛ConnectionTimeOutException，即服务器连接超时，没有在规定的时间内建立连接
@@ -69,6 +67,5 @@ public class RestTemplateConfig {
     restTemplate.setRequestFactory(httpRequestFactory);
     return restTemplate;
   }
-  
+
 }
-*/

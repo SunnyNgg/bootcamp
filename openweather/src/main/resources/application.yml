@@ -7,14 +7,6 @@ rest:
     serviceVers: data/2.5
     serviceUrl: weather
     appid: ec91f884f2853116250477ba05110e1e
-
-spring:
-  redis:
-    database: 0 
-    host: localhost
-    port: 6379
-    password: mypass
-    timeout: 60000
   conn-mgr:
     connection:
       max-total: 20
@@ -29,4 +21,13 @@ spring:
       pool-connect: 10000
       server-connect: 10000
       server-read: 20000
+
+spring:
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+      password: 
+      timeout: 60000
 
